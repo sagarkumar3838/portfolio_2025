@@ -22,7 +22,7 @@ export function LampDemo() {
           }}
           className="mt-0 bg-gradient-to-br from-slate-300 to-slate-500 py-4 bg-clip-text text-center text-xl font-medium tracking-tight text-transparent md:text-2xl lg:text-3xl xl:text-4xl"
         >
-            Hello! My name is Sagar Samal and I am from Dhanbad , Jharkhand. As a B.Tech graduate in Compouter Science And Engineering from Meerut Institute Of Technology , Meerut in the Year 2024 and i also completed my Diploma in Computer Science And Engineering. I recently join Jspider to complete my MERN Stack course. I did internship in BrizTechInfoSystem and CodeSoft. I started learning web development during the pandemic, through online courses to learn the basics and enhance my skills, ensuring I learned enough to move forward and try the latest technologies. I am always looking for new challenges and opportunities to apply and expand my knowledge.
+            Hello! My name is Sagar Samal and I am from Dhanbad , Jharkhand. As a B.Tech graduate in Computer Science And Engineering from Meerut Institute Of Technology , Meerut in the Year 2024 and i also completed my Diploma in Computer Science And Engineering. I recently join Jspider to complete my MERN Stack course. I did internship in BrizTechInfoSystem and CodeSoft. I started learning web development during the pandemic, through online courses to learn the basics and enhance my skills, ensuring I learned enough to move forward and try the latest technologies. I am always looking for new challenges and opportunities to apply and expand my knowledge.
         </motion.h3>
       </LampContainer>
     </div>

@@ -31,6 +31,12 @@ module.exports = {
           "0%": { transform: "translateX(-200px)" },
           "100%": { transform: "translateX(200px)" },
         },
+        border: {
+          to: { '--border-angle': '360deg' },
+        },
+      },
+      animation: {
+        border: 'border 4s linear infinite',
       },
     },
   },
