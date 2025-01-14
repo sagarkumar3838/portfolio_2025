@@ -17,7 +17,7 @@ export function CardDemo() {
 
 const Skeleton = () => {
   const scale = [1, 1.1, 1];
-  const transform = ["translateY(0px)", "translateY(-4px)", "translateY(0px)"];
+  const transform = ["translateY(0px)", "translateY(-8px)", "translateY(0px)"];
   const sequence = [
     [
       ".circle-1",
@@ -82,7 +82,7 @@ const Skeleton = () => {
         </Container>
       </div>
       <div className="h-40 w-px absolute top-20 m-auto z-40 bg-gradient-to-b from-transparent via-blue-800 to-transparent animate-move">
-        <div className="w-10 h-32 top-1/2 -translate-y-1/2 absolute -left-10">
+        <div className="w-10 h-32 top-1/2 -translate-y-1/2 relative -left-10">
           <Sparkles />
         </div>
       </div>
@@ -130,7 +130,7 @@ export const Card = ({ className, children }) => {
   return (
     <div
       className={cn(
-        "w-72 mx-auto p-4 rounded-xl border border-[rgba(255,255,255,0.10)] dark:bg-[rgba(40,40,40,0.70)] bg-gray-100 shadow-[2px_4px_20px_0px_rgba(248,248,248,0.06)_inset] group",
+        "w-54 md:w-72 mx-auto p-4 rounded-xl border border-[rgba(255,255,255,0.10)] dark:bg-[rgba(40,40,40,0.70)] bg-gray-100 shadow-[2px_4px_20px_0px_rgba(248,248,248,0.06)_inset] group",
         className
       )}
     >

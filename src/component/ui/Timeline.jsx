@@ -19,7 +19,7 @@ export const Timeline = ({ data }) => {
     offset: ["start 10%", "end 50%"],
   });
 
-  const heightTransform = useTransform(scrollYProgress, [0, 1], [0, 5]);
+  const heightTransform = useTransform(scrollYProgress, [0, 1], [0, height]);
   const opacityTransform = useTransform(scrollYProgress, [0, 0.1], [0, 1]);
 
   return (
@@ -28,10 +28,10 @@ export const Timeline = ({ data }) => {
       ref={containerRef}
     >
       <div className="max-w-7xl mx-auto py-20 px-4 md:px-8 lg:px-10">
-        <h2 className="text-lg md:text-4xl mb-4 text-neutral-300 dark:text-black max-w-4xl">
+        <h2 className="text-lg md:text-7xl mb-4 text-neutral-300 dark:text-black max-w-4xl">
           Education
         </h2>
-        <p className="text-neutral-300 dark:text-neutral-300 text-sm md:text-base max-w-sm">
+        <p className="text-neutral-300 dark:text-neutral-300 text-sm md:text-2xl max-w-sm">
            Here&apos;s
           a timeline of my journey.
         </p>
@@ -67,7 +67,7 @@ export const Timeline = ({ data }) => {
               height: heightTransform,
               opacity: opacityTransform,
             }}
-            className="absolute inset-x-0 top-0  w-[4px] bg-gradient-to-t from-purple-700 via-grey-500 to-transparent from-[0%] via-[10%] rounded-full"
+            className="absolute inset-x-0 top-0  w-[4px] bg-gradient-to-t  from-purple-500 via-blue-500 to-transparent from-[0%] via-[10%] rounded-full"
           />
         </div>
       </div>

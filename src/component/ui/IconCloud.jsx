@@ -23,8 +23,8 @@ export function IconCloud({ icons, images }) {
 
     const newIconCanvases = items.map((item, index) => {
       const offscreen = document.createElement("canvas");
-      offscreen.width = 180; // Increased size
-      offscreen.height = 180; // Increased size
+      offscreen.width = 150; // Increased size
+      offscreen.height = 150; // Increased size
       const offCtx = offscreen.getContext("2d");
 
       if (offCtx) {
@@ -85,10 +85,10 @@ export function IconCloud({ icons, images }) {
       const z = Math.sin(phi) * r;
 
       newIcons.push({
-        x: x * 140,
-        y: y * 180,
-        z: z * 140,
-        scale: 4,
+        x: x * 200,
+        y: y * 200,
+        z: z * 200,
+        scale: 8,
         opacity: 1,
         id: i,
       });
@@ -135,7 +135,7 @@ export function IconCloud({ icons, images }) {
           Math.pow(targetX - currentX, 2) + Math.pow(targetY - currentY, 2)
         );
 
-        const duration = Math.min(2000, Math.max(800, distance * 1000));
+        const duration = Math.min(1000, Math.max(400, distance * 1000));
 
         setTargetRotation({
           x: targetX,
@@ -188,13 +188,13 @@ export function IconCloud({ icons, images }) {
     const animate = () => {
       ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-      const centerX = canvas.width / 2;
-      const centerY = canvas.height / 2;
+      const centerX = canvas.width / 4;
+      const centerY = canvas.height / 4;
       const maxDistance = Math.sqrt(centerX * centerX + centerY * centerY);
       const dx = mousePos.x - centerX;
       const dy = mousePos.y - centerY;
       const distance = Math.sqrt(dx * dx + dy * dy);
-      const speed = 0.003 + (distance / maxDistance) * 0.01;
+      const speed = 0.008 + (distance / maxDistance) * 0.01;
 
       if (targetRotation) {
         const elapsed = performance.now() - targetRotation.startTime;
@@ -226,8 +226,8 @@ export function IconCloud({ icons, images }) {
         const rotatedZ = icon.x * sinY + icon.z * cosY;
         const rotatedY = icon.y * cosX + rotatedZ * sinX;
 
-        const scale = (rotatedZ + 600) / 300;
-        const opacity = Math.max(0.2, Math.min(1, (rotatedZ + 400) / 100));
+        const scale = (rotatedZ + 600) / 400;
+        const opacity = Math.max(0.2, Math.min(1, (rotatedZ + 400) / 200));
 
         ctx.save();
         ctx.translate(canvas.width / 2 + rotatedX, canvas.height / 2 + rotatedY);
@@ -237,12 +237,12 @@ export function IconCloud({ icons, images }) {
         if (icons || images) {
           // Only try to render icons/images if they exist
           if (iconCanvasesRef.current[index] && imagesLoadedRef.current[index]) {
-            ctx.drawImage(iconCanvasesRef.current[index], -10, -40, 60, 60); // Adjusted for new size
+            ctx.drawImage(iconCanvasesRef.current[index], -10, -10, 80, 80); // Adjusted for new size
           }
         } else {
           // Show numbered circles if no icons/images are provided
           ctx.beginPath();
-          ctx.arc(0, 0, 30, 0, Math.PI * 2); // Adjusted for new size
+          ctx.arc(0, 0, 10, 0, Math.PI * 2); // Adjusted for new size
           ctx.fillStyle = "#4444ff";
           ctx.fill();
           ctx.fillStyle = "white";
@@ -264,18 +264,18 @@ export function IconCloud({ icons, images }) {
         cancelAnimationFrame(animationFrameRef.current);
       }
     };
-  }, [icons, images, iconPositions, isDragging, mousePos, targetRotation]);
+  }, [icons, images, iconPositions, isDragging, mousePos, targetRotation ]);
 
   return (
     <canvas
       ref={canvasRef}
-      width={500}
-      height={400}
+      width={800}
+      height={500}
       onMouseDown={handleMouseDown}
       onMouseMove={handleMouseMove}
       onMouseUp={handleMouseUp}
       onMouseLeave={handleMouseUp}
-      className="rounded-4xl"
+      className="rounded-2xl"
       aria-label="Interactive 3D Icon Cloud"
       role="img"
     />

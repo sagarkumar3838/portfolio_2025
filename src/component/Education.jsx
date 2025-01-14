@@ -4,7 +4,7 @@ import { TimelineDemo } from './ui/TimelineDemo'
 
 const Education = () => {
   return (
-    <div>
+    <div id='education'>
       <TimelineDemo/>
     </div>
   )

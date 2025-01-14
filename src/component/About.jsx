@@ -5,7 +5,7 @@ import { LampDemo } from './ui/LampDemo'
 const About = () => {
   return (
    
-      <section className="personal-info">
+      <section className="personal-info" id='about'>
         <LampDemo/>
         
       </section>

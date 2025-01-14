@@ -142,7 +142,7 @@ const Sparkles = () => {
 export const Card = ({ className, children }) => {
   return (
     <div className={cn(
-        "w-72 mx-auto p-4 rounded-xl border border-[rgba(255,255,255,0.10)] dark:bg-[rgba(40,40,40,0.70)] bg-gray-100 shadow-[2px_4px_20px_0px_rgba(248,248,248,0.06)_inset] group",
+        "w-54 md:w-72 mx-auto p-4 rounded-xl border border-[rgba(255,255,255,0.10)] dark:bg-[rgba(40,40,40,0.70)] bg-gray-100 shadow-[2px_4px_20px_0px_rgba(248,248,248,0.06)_inset] group",
         className
       )}
     >
