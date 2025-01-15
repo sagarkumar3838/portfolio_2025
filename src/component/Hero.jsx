@@ -46,7 +46,7 @@ const Section2 = ({ scrollYProgress }) => {
   return (
     <motion.section
     style={{ scale, rotate }}
-    className="relative h-full sm:h-[40rem] bg-gradient-to-t to-[#1a1919] from-[#06060e] text-white"
+    className="relative h-screen sm:h-[60rem] bg-gradient-to-t to-[#1a1919] from-[#06060e] text-white"
     id='services'
     
   >

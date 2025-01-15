@@ -90,9 +90,9 @@ const Footer = () => {
             
            
           </div>
-          <div className="border-y-2 md:py-6 dark:border-gray-200">
-         <h1 className=" sm:text-[2rem] md:text-text-[5rem] lg:text-[10rem] leading-[110%] dark:text-gray-800 text-center ">
-                      <RandomizedTextEffect text="/SagarSamal"/>
+          <div className="border-y-2 md:py-10 dark:border-gray-200">
+         <h1 className="  leading-[110%] dark:text-gray-800 text-center ">
+                      <RandomizedTextEffect text="/SagarSamal" className='sm:text-[2rem] md:text-[6rem] lg:text-[10rem]'/>
                     </h1>
          
           </div>

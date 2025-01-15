@@ -10,7 +10,7 @@ function TimelineAnimation() {
   return (
     <>
       <section
-        className="sm:grid grid-cols-2 gap-10 h-[650px] pt-10 px-4  dark:text-white"
+        className="sm:grid grid-cols-2 gap-10 h-[750px] pt-10 px-4  dark:text-white"
         ref={heroRef}>
         <TimelineContent animationNum={0} timelineRef={heroRef}>
           <img
@@ -22,7 +22,7 @@ function TimelineAnimation() {
         <div className="space-y-2">
           {' '}
           <TimelineContent animationNum={1} timelineRef={heroRef}>
-            <h1 className="text-5xl leading-[110%]">
+            <h1 className="sm:text-2xl text-5xl leading-[110%]">
               <RandomizedTextEffect text="ANIMEFLIX WEB APP"/>
             </h1>
           </TimelineContent>
@@ -39,7 +39,7 @@ function TimelineAnimation() {
           </TimelineContent>
           <TimelineContent animationNum={3} timelineRef={heroRef}>
             <a
-              className="flex gap-2 w-fit bg-gray-800 rounded-md p-2"
+              className="flex gap-2 w-fit bg-gray-800 rounded-md p-2 "
               href="https://animeflix3838.web.app/"
               target="_blank">
              
@@ -48,11 +48,11 @@ function TimelineAnimation() {
           </TimelineContent>
         </div>
       </section>
-      <section ref={aboutRef} className="sm:grid grid-cols-2 gap-10 pb-10 px-4">
-        <div className="space-y-2">
+      <section ref={aboutRef} className="sm:grid grid-cols-2 gap-10 pb-10 px-4 ">
+        <div className="space-y-4 ">
           {' '}
           <TimelineContent animationNum={1} timelineRef={aboutRef}>
-          <h1 className="text-5xl leading-[110%]">
+          <h1 className=" sm:text-2xl text-5xl leading-[90%]  ">
               <RandomizedTextEffect text="DIGITAL HIPPO APP"/>
             </h1>
           </TimelineContent>
@@ -69,7 +69,7 @@ function TimelineAnimation() {
           </TimelineContent>
           <TimelineContent animationNum={3} timelineRef={heroRef}>
             <a
-              className="flex gap-2 w-fit bg-gray-800 rounded-md p-2"
+              className="flex gap-2 w-fit bg-gray-800 rounded-md p-2 mb-4"
               href="http://digital-market-app.onrender.com/"
               target="_blank">
              

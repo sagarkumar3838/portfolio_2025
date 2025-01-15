@@ -4,7 +4,7 @@ import { IconCloudDemo } from './ui/IconCloudDemo';
 const Skills = () => {
   return (
     <div id='skills'>
-      <section className="relative h-screen sm:max-h-full bg-gradient-to-t to-[#1a1919] from-[#06060e] text-white md:space-x-2 " >
+      <section className="relative  sm:max-h-full bg-gradient-to-t to-[#1a1919] from-[#06060e] text-white md:space-x-2 " >
         <div className="absolute bottom-0 left-0 right-0 top-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:54px_54px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)]"></div>
 
         <div className=' lg:flex items-center justify-center'>
@@ -24,6 +24,7 @@ const Skills = () => {
                   </div>
                 </div>
               </div>
+            
               <IconCloudDemo  />
               <div className=' sm:mb-0'>
                 <div className="w-full max-w-[422px] mx-auto [background:linear-gradient(45deg,#080b11,theme(colors.slate.800)_50%,#172033)_padding-box,conic-gradient(from_var(--border-angle),theme(colors.slate.600/.48)_80%,_theme(colors.indigo.500)_86%,_theme(colors.indigo.300)_90%,_theme(colors.indigo.500)_94%,_theme(colors.slate.600/.48))_border-box] rounded-2xl border border-transparent animate-border">

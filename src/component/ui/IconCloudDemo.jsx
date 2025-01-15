@@ -39,7 +39,7 @@ export function IconCloudDemo() {
   );
 
   return (
-    <div className="relative lg:flex    items-center justify-center overflow-hidden  bg-transparent ">
+    <div className="relative  lg:flex items-center justify-center overflow-hidden  bg-transparent ">
       <IconCloud images={images} />
     </div>
   );
