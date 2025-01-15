@@ -21,13 +21,13 @@ function HeaderTitle() {
         <Sparkles
           density={400}
           size={1.4}
-          direction="bottom"
+          direction="top"
           className="absolute inset-x-0 top-0 h-full w-full [mask-image:radial-gradient(50% 50%, green, transparent_85%)]"
         />
       </div>
-      <div className="mx-auto -mt-72 w-screen max-w-2xl relative z-10">
-        <div className="bg-transparent backdrop-blur-lg border border-gray-800 p- w-[20rem] h-40  mx-auto grid place-content-center rounded-full">
-        <img src='/images/profile_img.png' className='rounded-full'/>
+      <div className="mx-auto -mt-[24rem] w-screen max-w-2xl relative z-10">
+        <div className=" bg-transparent backdrop-blur-lg border border-gray-800  w-[16rem]   mx-auto grid place-content-center rounded-full bg-[#090923]">
+        <img src='/images/logo2.png' className=' rounded-full  '/>
         </div>
       </div>
       <article className="text-white pt-16  mx-auto block text-center z-10 relative">
