@@ -28,7 +28,7 @@ export const Timeline = ({ data }) => {
       ref={containerRef}
     >
       <div className="max-w-7xl mx-auto py-20 px-4 md:px-8 lg:px-10">
-        <h2 className="text-lg md:text-7xl mb-4 text-neutral-300 dark:text-black max-w-4xl">
+        <h2 className="text-4xl md:text-7xl mb-4 text-neutral-300 dark:text-black max-w-4xl font-bold">
           Education
         </h2>
         <p className="text-neutral-300 dark:text-neutral-300 text-sm md:text-2xl max-w-sm">

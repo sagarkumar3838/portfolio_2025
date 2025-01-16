@@ -57,7 +57,7 @@ const Section2 = ({ scrollYProgress }) => {
         <span className='text-xl'>- Services</span> <br /> My <span className='text-[#00FF00]'>Services</span>
       </h1>
       
-      <div className="mt-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 ">
+      <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 ">
        <CardDemo className="" />
       <CardDemo1 className="" />
       <CardDemo3 className="" />

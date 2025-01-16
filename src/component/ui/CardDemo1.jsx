@@ -78,7 +78,7 @@ const Skeleton = () => {
   }, []);
   return (
     (<div
-      className="p-8 overflow-hidden h-full relative flex items-center justify-center">
+      className="p-4 md:p-8 overflow-hidden h-full relative flex items-center justify-center">
       <div className="flex flex-row flex-shrink-0 justify-center items-center gap-5">
        
         <Container className=" circle-4 ">
@@ -147,7 +147,7 @@ export const Card = ({
   return (
     (<div
       className={cn(
-        " w-54 md:w-72  mx-auto p-4 rounded-xl border border-[rgba(255,255,255,0.10)] dark:bg-[rgba(40,40,40,0.70)] bg-gray-100 shadow-[2px_4px_20px_0px_rgba(248,248,248,0.06)_inset] group",
+       "  w-54 lg:w-72 h-[200px] md:h-[480px]  mx-auto md:p-8 lg:p-4 rounded-xl border border-[rgba(255,255,255,0.10)] dark:bg-[rgba(40,40,40,0.70)] bg-gray-100 shadow-[2px_4px_20px_0px_rgba(248,248,248,0.06)_inset] group",
         className
       )}>
       {children}
@@ -161,7 +161,7 @@ export const CardTitle = ({
 }) => {
   return (
     (<h3
-      className={cn(" text-center text-2xl font-bold text-gray-600 dark:text-white ", className)}>
+      className={cn(" mt-6 md:mt-1 text-center text-4xl md:text-2xl font-bold text-gray-600 dark:text-white ", className)}>
       {children}
     </h3>)
   );

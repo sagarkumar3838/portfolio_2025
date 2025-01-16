@@ -8,7 +8,7 @@ export function TimelineDemo() {
       title: "2024",
       content: (
         <div>
-          <p className="text-neutral-300 dark:text-neutral-800 text-xs md:text-xl text-center font-semibold mb-2">
+          <p className="text-neutral-300 dark:text-neutral-800 text-xs md:text-3xl text-center font-semibold mb-2">
             BACHELOR OF COMPUTER SCIENCE AND ENGINEERING
           </p>
           <p className="text-neutral-300 dark:text-neutral-800 text-xs md:text-xl text-center font-normal ">
