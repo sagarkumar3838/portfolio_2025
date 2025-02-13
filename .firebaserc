@@ -1,15 +1,5 @@
 {
   "projects": {
-    "default": "portfolio3838"
-  },
-  "targets": {
-    "portfolio3838": {
-      "hosting": {
-        "portfolio3838-d92b6": [
-          "portfolio3838-d92b6"
-        ]
-      }
-    }
-  },
-  "etags": {}
+    "default": "sagarportfolio38"
+  }
 }

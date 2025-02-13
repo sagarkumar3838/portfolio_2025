@@ -1,6 +1,7 @@
 {
   "hosting": {
-    "public": "build",
+    "site": "sagarportfolio38-583a3",
+    "public": "dist",
     "ignore": [
       "firebase.json",
       "**/.*",

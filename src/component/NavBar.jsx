@@ -31,12 +31,12 @@ export const NavBar = () => {
 
   return (
     <>
-      <nav className='fixed left-0 right-0 top-4 z-50'>
-        <div className="mx-auto hidden md:max-w-2xl  lg:max-w-5xl items-center justify-center rounded-md bg-[#090923]/30 py-3 backdrop-blur-lg lg:flex">
-          <div className="flex justify-between gap-48">
+      <nav className='fixed left-0 right-0 top-2 z-50'>
+        <div className="mx-auto hidden md:max-w-2xl  lg:max-w-5xl items-center justify-center rounded-md bg-[#090923]/30 py-2 backdrop-blur-lg lg:flex">
+          <div className="flex justify-between gap-40">
             <div>
               <a href="#">
-                <img src="/images/LOGO.png" alt="Logo" className="w-12 h-12 rounded-lg bg-[#090923] " />
+                <img src="/images/LOGO.png" alt="Logo" className="w-10 h-10 rounded-lg bg-[#090923] " />
               </a>
             </div>
             <div>
@@ -65,7 +65,7 @@ export const NavBar = () => {
           <div className="flex items-center justify-between">
             <div>
               <a href="">
-                <img src='/images/LOGO.png' width={90} alt='logo' className='m-2 w-[60px] rounded-full' />
+                <img src='/images/LOGO.png' width={90} alt='logo' className='m-2 w-[40px] rounded-full' />
               </a>
             </div>
             <div className="flex items-center">
