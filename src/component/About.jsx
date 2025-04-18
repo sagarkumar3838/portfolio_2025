@@ -5,7 +5,7 @@ import { LampDemo } from './ui/LampDemo'
 const About = () => {
   return (
    
-      <section className="personal-info relative h-full  bg-gradient-to-t to-[#1a1919] from-[#06060e] text-white md:space-x-2" id='about'>
+      <section className="personal-info relative   bg-gradient-to-t to-[#021731] from-[#080e1f] text-white " id='about'>
         <LampDemo className=""/>
         
       </section>

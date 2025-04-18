@@ -41,11 +41,11 @@ export function RandomizedTextEffect({ text, className = '' }) {
           .join('')
       );
     }
-  }, [text, getRandomChar]);
+  }, [text, getRandomChar]); 
 
   useEffect(() => {
     animateText();
   }, [text, animateText]);
 
-  return <div className={`relative inline-block ${className}`}>{animatedText}</div>;
+  return <div className={`relative inline-block text-4xl font-bold font-2 ${className}`}>{animatedText}</div>;
 }

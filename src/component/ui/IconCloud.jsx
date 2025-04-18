@@ -268,8 +268,8 @@ export function IconCloud({ icons, images }) {
 
   return (
 
-    <div class="relative sm:size-64 lg:size-auto">
-  <div class=" inset-y-8 -left-8 lg:left-0 w-16 lg:w-full">
+    <div class="relative sm:size-16 md:size-48 lg:size-auto">
+  <div class=" inset-y-8 -left-8 lg:left-0  md:w-full lg:w-full">
 
   <canvas
       ref={canvasRef}
@@ -279,7 +279,7 @@ export function IconCloud({ icons, images }) {
       onMouseMove={handleMouseMove}
       onMouseUp={handleMouseUp}
       onMouseLeave={handleMouseUp}
-      className="rounded-2xl sm:h-[16rem] lg:w-full lg:h-full md:mr-[0rem] lg:mr-0"
+      className="rounded-2xl w-full h-full md:w-full  lg:w-full lg:h-full" 
       aria-label="Interactive 3D Icon Cloud"
       role="img"
     />

@@ -51,15 +51,15 @@ export default function ScrollBaseAnimation({
     baseX.set(baseX.get() + moveBy);
   });
   return (
-    <div className="overflow-hidden whitespace-nowrap flex flex-nowrap">
+    <div className=" overflow-hidden whitespace-nowrap flex flex-nowrap">
       <motion.div
-        className="flex whitespace-nowrap gap-10 flex-nowrap "
+        className="flex whitespace-nowrap gap-16 flex-nowrap "
         style={{ x }}
       >
-        <span className={cn(`block text-[3vw]`, clasname)}>{children}</span>
-        <span className={cn(`block text-[3vw]`, clasname)}>{children}</span>
-        <span className={cn(`block text-[3vw]`, clasname)}>{children}</span>
-        <span className={cn(`block text-[3vw]`, clasname)}>{children}</span>
+        <span className={cn(`block text-[4vw]`, clasname)}>{children}</span>
+        <span className={cn(`block text-[4vw]`, clasname)}>{children}</span>
+        <span className={cn(`block text-[4vw]`, clasname)}>{children}</span>
+        <span className={cn(`block text-[4vw]`, clasname)}>{children}</span>
       </motion.div>
     </div>
   );

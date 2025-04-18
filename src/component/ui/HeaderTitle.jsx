@@ -37,7 +37,7 @@ function HeaderTitle() {
         <h2>I'm <span className='text-xl md:text-3xl lg:text-5xl text-sky-500'>Sagar Samal,</span></h2>
         <h1> <span> <FlipWords words={words}/></span></h1>
       </article>
-     <div className='flex items-center justify-center  mt-[1rem] lg:mt-[2rem] '>
+     <div className='flex items-center justify-center  mt-[4rem] md:mt-[4rem] lg:mt-[2rem] '>
      <div className=' text-center gap-2 flex items-center justify-center  border rounded-full h-14 w-72 bg-white z-30 '>
         <InteractiveHoverButton className="bg-[#00FF00]"/>
         <InteractiveHoverButton className="bg-blue-500 text-white hover:bg-blue-600" text="Hire Me" />
@@ -45,13 +45,14 @@ function HeaderTitle() {
       </div>
      </div>
 
-     <div className=' mt-8 md:mt-2 lg:mt-4 h-[3rem] md:h-[4rem] lg:h-[5rem] grid place-content-center bg-[#00FF00] text-black text-xl md:text-4xl font-bold'>
+     <div className='  mt-8 mb-8 md:mt-6 lg:mt-4 h-[3rem] md:h-[4rem] lg:h-[6rem] grid place-content-center bg-[#00FF00] text-black text-2xl md:text-4xl font-bold'>
         <ScrollBaseAnimation
           // delay={500}
           baseVelocity={3}
           scrollDependent={true}
-          className='font-bold tracking-[-0.07em] md:leading-[160%] lg:leading-[140%]  '
+          className=' font-bold tracking-[-0.07em] md:leading-[160%] lg:leading-[180%]  '
         >
+
          <h1>
         Web Development <FontAwesomeIcon icon={faStar} className="mx-12" />
         UI/UX Design <FontAwesomeIcon icon={faStar} className="mx-12" />

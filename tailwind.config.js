@@ -23,7 +23,7 @@ module.exports = {
 
 
     extend: {
-      fontFamily:["Oswald" , "sans-serif"],
+      fontFamily:["Oswald" , "sans-serif" , "Playwrite IS", "Nunito", "Poppins", "Roboto"],
       animation: {
         move: "move 5s linear infinite",
       },
@@ -54,5 +54,9 @@ function addVariablesForColors({ addBase, theme }) {
     ":root": newVars,
   });
 }
+
+
+
+
 
 

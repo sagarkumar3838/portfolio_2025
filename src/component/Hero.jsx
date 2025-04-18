@@ -13,7 +13,7 @@ const Hero = () => {
   });
 
   return (
-    <main ref={container} className="relative sm:h-[200vh] md:h-[210vh] lg:h-[200vh] bg-white">
+    <main ref={container} className="relative w-full h-[205vh] md:h-[225vh] lg:h-[200vh] bg-[#0a0909]   ">
       <Section scrollYProgress={scrollYProgress} />
       <Section scrollYProgress={scrollYProgress} id="services" />
     </main>
@@ -29,7 +29,7 @@ const Section = ({ scrollYProgress, id }) => {
   return (
     <motion.section
       style={{ scale, rotate }}
-      className="font-semibold top-0 h-screen bg-gradient-to-t to-[#090808] from-[#0a0909] flex flex-col items-center justify-center dark:text-white text-gray-500"
+      className="font-semibold top-0  bg-gradient-to-t to-[#090808] from-[#0a0909] flex flex-col items-center justify-center dark:text-white text-gray-500"
       id={id}
       
     >
@@ -41,7 +41,7 @@ const Section = ({ scrollYProgress, id }) => {
             <span className="text-xl ">- Services</span> <br /> My <span className="text-[#00FF00]">Services</span>
           </h1>
           
-          <div className="mt-3 mb-8 md:mb-0 md:mt-4 lg:mt-16 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-4 lg:gap-8">
+          <div className="mt-3 mb-8  md:mt-4 lg:mt-16 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-4 lg:gap-8">
             <CardDemo className="p-2 sm:p-6 md:p-8 lg:p-10 xl:p-12" />
             <CardDemo1 className="p-2 sm:p-6 md:p-8 lg:p-10 xl:p-12" />
             <CardDemo3 className="p-2 sm:p-6 md:p-8 lg:p-10 xl:p-12" />

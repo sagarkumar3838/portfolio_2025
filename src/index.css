@@ -10,3 +10,35 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+
+.canvas-container {
+  width: 80vw; /* 80% of the viewport width */
+  height: 60vh; /* 60% of the viewport height */
+}
+
+/* Mobile devices (portrait) */
+@media (max-width: 480px) {
+  .canvas-container {
+    width: 30vw; /* full screen width */
+    height: 30vh;
+/* 50% of the viewport height */
+  }
+}
+
+/* Mobile devices (landscape) */
+@media (max-width: 768px) and (orientation: landscape) {
+  .canvas-container {
+    width: 80vw; /* 80% of the viewport width */
+    height: 40vh; /* 40% of the viewport height */
+  }
+}
+
+/* Laptop and PC */
+@media (min-width: 1024px) {
+  .canvas-container {
+    width: 60vw; /* 60% of the viewport width */
+    height: 50vh; /* 50% of the viewport height */
+  }
+}
