@@ -5,7 +5,7 @@ import { cn } from "../utils/cn";
 
 export function LampDemo() {
   return (
-    <div className="container h-full lg:h-[100vh] mx-auto md:p-6 lg:p-12   ">
+    <div className="container h-full lg:h-[100vh] mx-auto md:p-6 lg:p-12  lg:mt-[5rem] ">
       <div className="flex items-center justify-center ">
         <h1
           className="absolute z-10 text-white text-3xl md:text-4xl lg:text-5xl text-center mt-[3rem] md:mt-[6rem] lg:mt-[16rem] font-bold"

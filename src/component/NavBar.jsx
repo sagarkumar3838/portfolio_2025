@@ -4,7 +4,7 @@ import { faBars } from '@fortawesome/free-solid-svg-icons';
 import { faX } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-scroll';
 
-import { NAVIGATION_LINKS } from '../constants';
+import { NAVIGATION_LINKS } from "/constants/Index.jsx";
 
 const NavBar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
