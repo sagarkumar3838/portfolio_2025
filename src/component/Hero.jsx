@@ -13,7 +13,10 @@ const Hero = () => {
   });
 
   return (
-    <main ref={container} className="relative w-full h-[205vh] md:h-[225vh] lg:h-[200vh]  bg-[#0a0909]   ">
+<main ref={container} className="relative w-full bg-[#0a0909]">
+
+
+
     {/* // <main
     //   ref={container}
     //   className="relative w-full min-h-full bg-[#0a0909]  overflow-hidden"
@@ -33,7 +36,7 @@ const Section = ({ scrollYProgress, id }) => {
   return (
     <motion.section
       style={{ scale, rotate }}
-      className="font-semibold top-0  bg-gradient-to-t to-[#090808] from-[#0a0909] flex flex-col items-center justify-center dark:text-white text-gray-500 "
+      className="font-semibold top-0  bg-gradient-to-t to-[#090808] from-[#0a0909] flex flex-col items-center justify-center dark:text-white text-gray-500"
       id={id}
     >
       {id === "services" ? (

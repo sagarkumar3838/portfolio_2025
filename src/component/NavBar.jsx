@@ -34,7 +34,7 @@ const NavBar = () => {
 
   return (
     <nav className="fixed left-0 right-0 top-2 z-50">
-      <div className="mx-auto hidden md:max-w-2xl  lg:max-w-5xl items-center justify-center rounded-md bg-[#090923]/30 py-2 backdrop-blur-lg lg:flex">
+      <div className="mx-auto hidden md:max-w-2xl lg:max-w-5xl items-center justify-center rounded-md bg-[#090923]/30 py-2 backdrop-blur-lg lg:flex">
       {/* <div className="mx-auto hidden md:max-w-2xl  lg:max-w-5xl items-center justify-center rounded-md bg-white  py-2 backdrop-blur-lg lg:flex">   */}
         <div className="flex justify-between gap-40">
           <div>

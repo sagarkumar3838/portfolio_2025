@@ -11,7 +11,7 @@ import Footer from './component/Footer'
 const App = () => {
   return (
     <>
-      <main className='overflow-x-hidden bg-white tracking-tighter text-gray-200 antialiased'>
+      <main className='overflow-x-hidden bg-black tracking-tighter text-gray-200 antialiased'>
 
 
       <NavBar />
