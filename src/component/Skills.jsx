@@ -4,46 +4,44 @@ import { IconCloudDemo } from './ui/IconCloudDemo';
 const Skills = () => {
   return (
     <div id='skills'>
-      <section className="relative h-full  bg-gradient-to-t to-[#1a1919] from-[#06060e] text-white md:space-x-2 " >
-        <div className="absolute bottom-0 left-0 right-0 top-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:54px_54px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)]"></div>
+      <section className="relative h-full bg-gradient-to-t to-[#1a1919] from-[#06060e] text-white">
+        <div className="absolute inset-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:54px_54px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)]" />
 
-        <div className=' lg:flex items-center justify-center'>
-          <div className=' text-center lg:p-10'>
-            <h1 className='text-4xl sm:text-3xl md:text-6xl lg:text-7xl text-white font-bold mt-[4rem] mb-10'>Skills</h1>
-            <div className='flex flex-col sm:flex-row items-center justify-evenly'>
-              <div className=' sm:mb-4 lg:mb-2 '>
-                <div className="w-full  mx-auto [background:linear-gradient(45deg,#080b11,theme(colors.slate.800)_50%,#172033)_padding-box,conic-gradient(from_var(--border-angle),theme(colors.slate.600/.48)_80%,_theme(colors.indigo.500)_86%,_theme(colors.indigo.300)_90%,_theme(colors.indigo.500)_94%,_theme(colors.slate.600/.48))_border-box] rounded-2xl border border-transparent animate-border">
-                  <h1 className='text-xl sm:text-3xl md:text-2xl p-5 font-bold'>FRONTEND</h1>
-                  <div className="relative text-center z-10 px-4 sm:px-6 md:px-12 lg:px-20 py-4  md:py-16 lg:py-28 rounded-2xl w-fit bg-[url('https://res.cloudinary.com/dzl9yxixg/image/upload/new-grid_ng16tf.png')] h-full mx-auto">
-                    <div className='grid grid-cols-2 gap-4 sm:gap-6'>
-                      <img src='/images/html5.svg' className='h-10 sm:h-12 md:h-14 lg:h-16' alt="HTML5" />
-                      <img src='/images/css.svg' className='h-10 sm:h-12 md:h-14 lg:h-16' alt="CSS" />
-                      <img src='/images/react-color.svg' className='h-10 sm:h-12 md:h-14 lg:h-16' alt="React" />
-                      <img src='/images/javascript.svg' className='h-10 sm:h-12 md:h-14 lg:h-16' alt="JavaScript" />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            
-            
-             <div>
-             <IconCloudDemo  />
-             </div>
-             
-              <div className=' mb-8'>
-                <div className="w-full  max-w-[150rem] mx-auto [background:linear-gradient(45deg,#080b11,theme(colors.slate.800)_50%,#172033)_padding-box,conic-gradient(from_var(--border-angle),theme(colors.slate.600/.48)_80%,_theme(colors.indigo.500)_86%,_theme(colors.indigo.300)_90%,_theme(colors.indigo.500)_94%,_theme(colors.slate.600/.48))_border-box] rounded-2xl border border-transparent animate-border">
-                  <h1 className=' text-xl sm:text-3xl md:text-2xl p-5 font-bold'>BACKEND</h1>
-                  <div className="relative text-center z-10 px-4 sm:px-6 md:px-12 lg:px-20 py-4  md:py-16 lg:py-28 rounded-2xl w-fit bg-[url('https://res.cloudinary.com/dzl9yxixg/image/upload/new-grid_ng16tf.png')] h-full mx-auto">
-                    <div className='grid grid-cols-2 gap-4 sm:gap-6'>
-                      <img src='/images/mongodb.svg' className='h -10 sm:h-12 md:h-14 lg:h-16' alt="MongoDB" />
-                      <img src='/images/nodedotjs.svg' className='h-10 sm:h-12 md:h-14 lg:h-16' alt="Node.js" />
-                      <img src='/images/express.svg' className='h-10 sm:h-12 md:h-14 lg:h-16' alt="Express" />
-                      <img src='/images/docker.svg' className='h-10 sm:h-12 md:h-14 lg:h-16' alt="Docker" />
-                    </div>
-                  </div>
+        <div className='container mx-auto px-4 py-16'>
+          <h1 className='text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-center mb-12'>Skills</h1>
+          <div className='flex flex-col lg:flex-row lg:justify-around items-center gap-10'>
+
+            {/* FRONTEND */}
+            <div className="w-full max-w-md [background:linear-gradient(45deg,#080b11,theme(colors.slate.800)_50%,#172033)_padding-box,conic-gradient(from_var(--border-angle),theme(colors.slate.600/.48)_80%,_theme(colors.indigo.500)_86%,_theme(colors.indigo.300)_90%,_theme(colors.indigo.500)_94%,_theme(colors.slate.600/.48))_border-box] rounded-2xl border border-transparent animate-border">
+              <h2 className='text-2xl sm:text-3xl font-bold text-center p-5'>FRONTEND</h2>
+              <div className="relative z-10 text-center px-6 sm:px-8 md:px-10 lg:px-12 py-10 rounded-2xl w-fit mx-auto bg-[url('https://res.cloudinary.com/dzl9yxixg/image/upload/new-grid_ng16tf.png')]">
+                <div className='grid grid-cols-2 sm:grid-cols-2 gap-6'>
+                  <img src='/images/html5.svg' className='h-12 sm:h-14 md:h-16 lg:h-20' alt="HTML5" />
+                  <img src='/images/css.svg' className='h-12 sm:h-14 md:h-16 lg:h-20' alt="CSS" />
+                  <img src='/images/react-color.svg' className='h-12 sm:h-14 md:h-16 lg:h-20' alt="React" />
+                  <img src='/images/javascript.svg' className='h-12 sm:h-14 md:h-16 lg:h-20' alt="JavaScript" />
                 </div>
               </div>
             </div>
+
+            {/* ICON CLOUD (Center) */}
+            <div className='w-full max-w-lg flex justify-center items-center'>
+              <IconCloudDemo />
+            </div>
+
+            {/* BACKEND */}
+            <div className="w-full max-w-md [background:linear-gradient(45deg,#080b11,theme(colors.slate.800)_50%,#172033)_padding-box,conic-gradient(from_var(--border-angle),theme(colors.slate.600/.48)_80%,_theme(colors.indigo.500)_86%,_theme(colors.indigo.300)_90%,_theme(colors.indigo.500)_94%,_theme(colors.slate.600/.48))_border-box] rounded-2xl border border-transparent animate-border">
+              <h2 className='text-2xl sm:text-3xl font-bold text-center p-5'>BACKEND</h2>
+              <div className="relative z-10 text-center px-6 sm:px-8 md:px-10 lg:px-12 py-10 rounded-2xl w-fit mx-auto bg-[url('https://res.cloudinary.com/dzl9yxixg/image/upload/new-grid_ng16tf.png')]">
+                <div className='grid grid-cols-2 sm:grid-cols-2 gap-6'>
+                  <img src='/images/mongodb.svg' className='h-12 sm:h-14 md:h-16 lg:h-20' alt="MongoDB" />
+                  <img src='/images/nodedotjs.svg' className='h-12 sm:h-14 md:h-16 lg:h-20' alt="Node.js" />
+                  <img src='/images/express.svg' className='h-12 sm:h-14 md:h-16 lg:h-20' alt="Express" />
+                  <img src='/images/docker.svg' className='h-12 sm:h-14 md:h-16 lg:h-20' alt="Docker" />
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
       </section>

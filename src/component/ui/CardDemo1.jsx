@@ -1,6 +1,6 @@
 
 import { animate, motion } from "framer-motion";
-import React, { useEffect } from "react";
+import  { useEffect } from "react";
 import { cn } from "../utils/cn";
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -15,10 +15,7 @@ export function CardDemo1() {
         <Skeleton />
       </CardSkeletonContainer>
       <CardTitle className="">Backend <br /> Development</CardTitle>
-      {/* <CardDescription>
-        A card that showcases a set of tools that you use to create your
-        product.
-      </CardDescription> */}
+    
     </Card>)
   );
 }
@@ -71,7 +68,7 @@ const Skeleton = () => {
 
   useEffect(() => {
     animate(sequence, {
-      // @ts-ignore
+ 
       repeat: Infinity,
       repeatDelay: 1,
     });
@@ -87,18 +84,17 @@ const Skeleton = () => {
 </svg>
         </Container>
         <Container className="circle-3">
-        <FontAwesomeIcon icon={faNodeJs} size="2xl" style={{color: "#048650",}} className="h-18 w-18 dark:text-white" />
+        <FontAwesomeIcon icon={faNodeJs} size="2xl" style={{color: "#048650",}} className="h-6 w-6 md:h-8 md:w-8 lg:h-10 lg:w-10 xl:h-12 xl:w-12 2xl:h-14 2xl:w-14 dark:text-white" />
         </Container>
-        <Container className=" circle-4">
+        <Container className=" circle-4 ">
         <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="240" height="240" viewBox="0 0 48 48">
 <path fill="#5d4037" d="M42,17.3C42,37.8,24,44,24,44S6,37.8,6,17.3c0-2.5,0.2-4.6,0.4-6.3c0.3-2.5,2-4.5,4.4-5.1 C13.9,5,18.8,4,24,4s10.1,1,13.3,1.9c2.4,0.6,4.1,2.7,4.4,5.1C41.8,12.7,42,14.9,42,17.3z"></path><path fill="#4caf50" d="M24,7c4.9,0,9.5,1,12.5,1.8c1.2,0.3,2,1.3,2.2,2.6c0.2,1.9,0.3,3.9,0.3,5.9c0,15.6-11.5,21.9-15,23.4 c-3.5-1.6-15-7.9-15-23.4c0-2,0.1-4,0.3-5.9c0.1-1.3,1-2.3,2.2-2.6C14.5,8,19.1,7,24,7 M24,4c-5.2,0-10.1,1-13.3,1.9 C8.4,6.5,6.6,8.6,6.4,11C6.2,12.7,6,14.9,6,17.3C6,37.8,24,44,24,44s18-6.2,18-26.7c0-2.5-0.2-4.6-0.4-6.3c-0.3-2.5-2-4.5-4.4-5.1 C34.1,5,29.2,4,24,4L24,4z"></path><path fill="#dcedc8" d="M23 28H25V36H23z"></path><path fill="#4caf50" d="M24,10c0,0-6,5-6,13c0,5.2,3.3,8.5,5,10l1-3l1,3c1.7-1.5,5-4.8,5-10C30,15,24,10,24,10z"></path><path fill="#81c784" d="M24,10c0,0-6,5-6,13c0,5.2,3.3,8.5,5,10l1-3V10z"></path>
 </svg>
         </Container>
       
       </div>
-      <div
-        className="h-40 w-px absolute top-20 m-auto z-40 bg-gradient-to-b from-transparent via-blue-800 to-transparent animate-move">
-        <div className="w-10 h-32 top-1/2 -translate-y-1/2 absolute -left-10">
+      <div className="h-40 w-px absolute top-0 md:top-2 lg:top-4 xl:top-28 2xl:top-32 m-auto z-40 bg-gradient-to-b from-transparent via-blue-800 to-transparent animate-move">
+        <div className="w-10 h-32 top-1/2 -translate-y-1/2 relative -left-10">
           <Sparkles />
         </div>
       </div>
@@ -140,18 +136,16 @@ const Sparkles = () => {
   );
 };
 
-export const Card = ({
-  className,
-  children
-}) => {
+export const Card = ({ className, children }) => {
   return (
-    (<div
+    <div
       className={cn(
-       " h-[11rem] w-[14rem] md:h-[15rem] md:w-[20rem]  lg:h-[24rem] lg:w-[18rem] mx-auto md:p-8 lg:p-4 rounded-xl border border-[rgba(255,255,255,0.10)] dark:bg-[rgba(40,40,40,0.70)] bg-gray-100 shadow-[2px_4px_20px_0px_rgba(248,248,248,0.06)_inset] group",
+        "  h-[11rem] w-[14rem] md:h-[16rem] md:w-[20rem] lg:h-[20rem] lg:w-[18rem]  xl:h-[28rem] xl:w-[24rem] 2xl:h-[32rem] 2xl:w-[24rem] mx-auto md:p-8 lg:p-4 xl:p-6 2xl:p-8 rounded-xl border border-[rgba(255,255,255,0.10)] dark:bg-[rgba(40,40,40,0.70)] bg-gray-100 shadow-[2px_4px_20px_0px_rgba(248,248,248,0.06)_inset] group",
         className
-      )}>
+      )}
+    >
       {children}
-    </div>)
+    </div>
   );
 };
 
@@ -162,7 +156,8 @@ export const CardTitle = ({
 }) => {
   return (
     (<h3
-      className={cn(" mt-6 md:mt-1 text-center text-2xl md:text-2xl font-bold text-gray-600 dark:text-white ", className)}>
+      className={cn(
+         "mt-6 md:mt-4 lg:mt-6 xl:mt-8 text-center text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl font-bold text-gray-600 dark:text-white", className)}>
       {children}
     </h3>)
   );
@@ -175,7 +170,7 @@ export const CardDescription = ({
   return (
     (<p
       className={cn(
-        "text-sm font-normal text-neutral-600 dark:text-neutral-400 max-w-sm",
+       "text-sm md:text-base font-normal text-neutral-600 dark:text-neutral-400 max-w-sm text-center",
         className
       )}>
       {children}
@@ -183,37 +178,35 @@ export const CardDescription = ({
   );
 };
 
-export const CardSkeletonContainer = ({
-  className,
-  children,
-  showGradient = true
-}) => {
+export const CardSkeletonContainer = ({ className, children, showGradient = true }) => {
   return (
-    (<div
-      className={cn("h-[5rem] md:h-[5rem] lg:h-[18rem] rounded-xl z-40", className, showGradient &&
-        "bg-neutral-300 dark:bg-[rgba(40,40,40,0.70)] [mask-image:radial-gradient(50%_50%_at_50%_50%,white_0%,transparent_100%)]")}>
-      {children}
-    </div>)
-  );
-};
-
-const Container = ({
-  className,
-  children
-}) => {
-  return (
-    (<div
+    <div
       className={cn(
-        `h-8 w-8 md:h-14 md:w-14  rounded-full flex items-center justify-center bg-[rgba(248,248,248,0.01)]
-    shadow-[0px_0px_8px_0px_rgba(248,248,248,0.25)_inset,0px_32px_24px_-16px_rgba(0,0,0,0.40)]
-    `,
-        className
-      )}>
+        "h-[5rem] md:h-[8rem] lg:h-[12rem] xl:h-[16rem] 2xl:h-[20rem] rounded-xl z-40",
+        className,
+        showGradient &&
+          "bg-neutral-300 dark:bg-[rgba(40,40,40,0.70)] [mask-image:radial-gradient(50%_50%_at_50%_50%,white_0%,transparent_100%)]"
+      )}
+    >
       {children}
-    </div>)
+    </div>
   );
 };
 
+
+const Container = ({ className, children }) => {
+  return (
+    <div
+      className={cn(
+        `h-8 w-8 md:h-16 md:w-16 lg:h-20 lg:w-20 xl:h-24 xl:w-24 2xl:h-28 2xl:w-28 rounded-full flex items-center justify-center bg-[rgba(248,248,248,0.01)]
+         shadow-[0px_0px_8px_0px_rgba(248,248,248,0.25)_inset,0px_32px_24px_-16px_rgba(0,0,0,0.40)]`,
+        className
+      )}
+    >
+      {children}
+    </div>
+  );
+};
 
 
 

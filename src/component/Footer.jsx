@@ -75,7 +75,7 @@ const Footer = () => {
           </div>
 
           {/* Scroll to Top Button */}
-          <div className="text-center mt-6 mb-6">
+          <div className="text-center pt-6 pb-6">
             <button
               onClick={scrollToTop}
               className="bg-gray-600 text-white px-6 py-2 rounded-lg  hover:bg-green-500 transition-all duration-300"
